@@ -1,15 +1,29 @@
 {
   "name": "webpack-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A clean foundational setup for your upcoming frontend project built on webpack.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open",
     "build": "webpack --mode production"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timothyguo86/webpack-starter"
+  },
+  "keywords": [
+    "webpack",
+    "startkit",
+    "frontend",
+    "es6",
+    "javascript",
+    "webdev"
+  ],
+  "author": "Timothy Guo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timothyguo86/webpack-starter/issues"
+  },
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.8",
