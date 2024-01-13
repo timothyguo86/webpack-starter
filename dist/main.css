@@ -1,0 +1,10 @@
+body {
+  background-color: gray;
+}
+.example {
+  background: linear-gradient(180deg, #fff, #000);
+  display: grid;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  user-select: none;
+}

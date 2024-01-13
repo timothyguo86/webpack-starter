@@ -1,1 +1,0 @@
-(()=>{console.log("Hello ".concat("Tim"));var o=[].concat(["Jan","Feb","Mar"],["Apr","May","Jun"],["Jul","Aug","Sep"],["Oct","Nov","May"]);console.log(o);for(var l="",n=0,a=["BMW","Volvo","Mini"];n<a.length;n++)l+=a[n]+" ";console.log(l)})();
