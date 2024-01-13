@@ -3,7 +3,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: { import: './src/js/index.js', dependOn: 'shared' },
+    shared: 'lodash'
+  },
   module: {
     rules: [
       {
@@ -18,6 +21,11 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin(),
     new MiniCssExtractPlugin({
@@ -25,7 +33,7 @@ module.exports = {
     })
   ],
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   }
 }
