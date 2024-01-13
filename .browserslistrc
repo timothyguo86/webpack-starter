@@ -1,3 +1,25 @@
+# Browserslist configuration file
+
+# This file is used by the build tools to adjust CSS and JavaScript output to match the specified target browsers.
+
+# For more information, please see:
+
+# https://github.com/browserslist/browserslist
+
+# You can see what browsers are selected by a query and
+
+# what queries Browserslist accepts by reading the documentation:
+
+# https://github.com/browserslist/browserslist#queries
+
+# For the full list of queries supported by Browserslist,
+
+# see the online query explorer:
+
+# https://browserl.ist/
+
+# Browsers to support
+
 last 2 years
 
 > 1%
