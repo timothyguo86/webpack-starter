@@ -1,10 +1,14 @@
 /** @type {import('postcss-load-config').Config} */
-const config = {
-  plugins: [
-    require('autoprefixer'),
-    require('postcss-nested'),
-    require('cssnano')
-  ]
+if (process.env.NODE_ENV === 'production') {
+  module.exports = {
+    plugins: [
+      require('autoprefixer'),
+      require('postcss-nested'),
+      require('cssnano')
+    ]
+  }
+} else {
+  module.exports = {
+    plugins: [require('postcss-nested')]
+  }
 }
-
-module.exports = config
