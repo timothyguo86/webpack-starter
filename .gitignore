@@ -2,7 +2,7 @@
 node_modules
 
 # Ignore build output
-dist
+dist/
 
 # Ignore IDE-specific files and directories
 .idea/

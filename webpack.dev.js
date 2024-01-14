@@ -1,3 +1,4 @@
+const ESLintPlugin = require('eslint-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const { merge } = require('webpack-merge')
@@ -21,5 +22,6 @@ module.exports = merge(common, {
         ]
       }
     ]
-  }
+  },
+  plugins: [new ESLintPlugin({ extensions: ['js'] })]
 })

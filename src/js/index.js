@@ -1,10 +1,6 @@
-import _ from 'lodash'
 import '../styles/main.scss'
 
-console.log(_.join(['Hello', 'World!'], ' '))
-
-const sum = (a, b) => {
-  return a + b
-}
+const sum = (a, b) => a + b
+console.log('sum::: ', sum(1, 2))
 
 export default sum
