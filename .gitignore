@@ -1,12 +1,10 @@
-# Ignore node_modules directory
-node_modules
+# dependancies
+node_modules/
 
-# Ignore build output
-dist/
-
-# Ignore IDE-specific files and directories
+# production
 .idea/
-.vscode
+.vscode/
 
 # misc
 .DS_Store
+.eslintcache

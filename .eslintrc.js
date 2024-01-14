@@ -28,7 +28,7 @@ module.exports = {
      */
 
     'no-undef': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // Turn off warnings for all undefined variables
-    'no-console': 'off', // Turn off warnings for console.log() syntax
+    'no-console': 1, // Display warnings for console.log() syntax
     indent: 'off',
     semi: [2, 'never'], // Require or disallow semicolons instead of ASI; 'never' disallows them
     quotes: [2, 'single'], // Use single quotes

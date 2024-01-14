@@ -1,5 +1,10 @@
-# Ignore the node_modules directory
-node_modules
+# dependancies
+node_modules/
 
-# Ignore the dist directory
+# production
 dist/
+public/
+build/
+
+# misc
+.eslintcache
