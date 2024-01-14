@@ -101,6 +101,7 @@ Feel free to customize these files based on your project requirements.
 - [ESLint](https://eslint.org/) - JavaScript linting utility.
 - [Prettier](https://prettier.io/) - Code formatter.
 - [PostCSS](https://postcss.org/) - CSS tooling.
+- [Lodash](https://lodash.com/) - JavaScript utility library.
 
 Feel free to contribute by opening issues or submitting pull requests.
 
