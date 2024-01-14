@@ -36,7 +36,6 @@ Ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
    ```bash
    git clone https://github.com/timothyguo86/webpack-starter.git
 
-
    ```
 
 2. Install dependencies:
