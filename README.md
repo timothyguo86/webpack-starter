@@ -15,6 +15,8 @@ A clean foundational setup for your upcoming frontend project built on [Webpack]
 - [Running Tests](#running-tests)
 - [Linting](#linting)
 - [Webpack Configuration](#webpack-configuration)
+- [Browser Support](#browser-support)
+- [IDE Configuration](#ide-configuration)
 - [Built With](#built-with)
 - [Contributing](#contributing)
 - [License](#license)
@@ -35,14 +37,12 @@ Ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
 
    ```bash
    git clone https://github.com/timothyguo86/webpack-starter.git
-
    ```
 
 2. Install dependencies:
 
    ```bash
    npm install
-
    ```
 
 ## Usage
@@ -53,7 +53,6 @@ This script starts the webpack development server with `Hot Module Replacement (
 
 ```bash
 npm run dev
-
 ```
 
 - ### Build for Production:
@@ -62,7 +61,6 @@ This script builds your project for production, optimizing and minifying the cod
 
 ```bash
 npm run build
-
 ```
 
 ## Running Tests
@@ -71,16 +69,22 @@ This script runs [Jest](https://jestjs.io/) tests. `Jest` is configured to handl
 
 ```bash
 npm run test
-
 ```
 
 ## Linting
 
-This script runs [ESLint](https://eslint.org/) to lint your JavaScript files in the `src` directory and automatically fixes fixable issues.
+This script runs [ESLint](https://eslint.org/) to lint your JavaScript files in the `src` directory and automatically fixes fixable issues. The default `eslint` configuration is based on [Airbnb's JS config](https://www.npmjs.com/package/eslint-config-airbnb-base) with tweaks defined in the `.eslintrc`.
 
 ```bash
 npm run lint
+```
 
+## Prepare
+
+This script was initially setup for installing the [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/lint-staged/lint-staged). It sets up the `.husky` directory, which you can ignore. This script installs and lint-staged. It sets up the .husky directory, which you can ignore. When you run `git commit -m <message>`, Husky executes the `.husky/pre-commit` script through `lint-staged`. This ensures linting and other tasks are performed on staged git files before committing.
+
+```bash
+npm run prepare
 ```
 
 ## Webpack Configuration
@@ -93,6 +97,14 @@ This repository includes three webpack configuration files:
 
 Feel free to customize these files based on your project requirements.
 
+## Browser Support
+
+Modify the `.browserslistrc` queries, e.g., `last 2 versions`, to ensure compatibility with Babel and PostCSS bundling configurations.
+
+## IDE Configuration
+
+Modify `.editorconfig` to maintain consistent coding styles for multiple developers working on the same project across various IDEs.
+
 ## Built With
 
 - [Webpack](https://webpack.js.org/) - Module bundler.
@@ -101,7 +113,9 @@ Feel free to customize these files based on your project requirements.
 - [ESLint](https://eslint.org/) - JavaScript linting utility.
 - [Prettier](https://prettier.io/) - Code formatter.
 - [PostCSS](https://postcss.org/) - CSS tooling.
-- [SASS](https://sass-lang.com/) - CSS preprocessor for enhanced styling.
+- [SASS](https://sass-lang.com/) - CSS preprocessor.
+- [Autoprefixer](https://github.com/postcss/autoprefixer) - CSS Vendor Prefixes.
+- [CSSnano](https://cssnano.co/) - CSS Minification Tool
 - [Husky](https://github.com/typicode/husky) - Git hooks.
 - [Lint-staged](https://github.com/lint-staged/lint-staged) - Pre-commit hooks.
 
