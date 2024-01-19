@@ -5,6 +5,9 @@ node_modules/
 .idea/
 .vscode/
 
+# test coverage
+coverage
+
 # misc
 .DS_Store
 .eslintcache
