@@ -18,6 +18,7 @@ A clean foundational setup for your upcoming frontend project built on [Webpack]
 - [Browser Support](#browser-support)
 - [IDE Configuration](#ide-configuration)
 - [Built With](#built-with)
+- [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -119,7 +120,11 @@ Modify `.editorconfig` to maintain consistent coding styles for multiple develop
 - [Husky](https://github.com/typicode/husky) - Git hooks.
 - [Lint-staged](https://github.com/lint-staged/lint-staged) - Pre-commit hooks.
 
-Feel free to contribute by opening issues or submitting pull requests.
+## Features
+
+- ### Cache Management and Performance Boost:
+
+The build hashes the bundled `_.css` and `_.js` files, ensuring that the browser fetches the latest version whenever their content changes. This enhances cache management and website performance by efficiently handling file updates.
 
 ## Contributing
 

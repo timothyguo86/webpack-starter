@@ -29,11 +29,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].css'
+      filename: '[name].[contenthash].css'
     })
   ],
   output: {
-    filename: '[name].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist')
   }
 }
