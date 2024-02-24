@@ -119,12 +119,26 @@ Modify `.editorconfig` to maintain consistent coding styles for multiple develop
 - [CSSnano](https://cssnano.co/) - CSS Minification Tool
 - [Husky](https://github.com/typicode/husky) - Git hooks.
 - [Lint-staged](https://github.com/lint-staged/lint-staged) - Pre-commit hooks.
+- [modern-normalize](https://github.com/sindresorhus/modern-normalize) - Normalize browsers' default style.
 
 ## Features
 
 - ### Cache Management and Performance Boost:
 
 The build hashes the bundled `_.css` and `_.js` files, ensuring that the browser fetches the latest version whenever their content changes. This enhances cache management and website performance by efficiently handling file updates.
+
+- ### Modern Normalize:
+
+Utilizes [modern-normalize](https://github.com/sindresorhus/modern-normalize), a modern alternative to traditional CSS resets or normalizations, ensuring consistent rendering across different browsers while maintaining a modern and clean baseline for styling. You can import the `modern-normalize` CSS file into your `main.scss` using the following directive:
+
+```scss
+// main.scss
+
+// Import modern-normalize
+@import 'modern-normalize/modern-normalize.css';
+
+// Your other SCSS styles here
+```
 
 ## Contributing
 

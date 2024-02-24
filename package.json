@@ -1,6 +1,6 @@
 {
   "name": "webpack-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A clean foundational setup for your upcoming frontend project built on webpack.",
   "main": "index.js",
   "scripts": {
@@ -68,7 +68,8 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "modern-normalize": "^2.0.0"
   },
   "lint-staged": {
     "./src/js/*.js": [
