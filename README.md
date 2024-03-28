@@ -82,7 +82,7 @@ npm run lint
 
 ## Prepare
 
-This script was initially setup for installing the [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/lint-staged/lint-staged). It sets up the `.husky` directory, which you can ignore. This script installs and lint-staged. It sets up the .husky directory, which you can ignore. When you run `git commit -m <message>`, Husky executes the `.husky/pre-commit` script through `lint-staged`. This ensures linting and other tasks are performed on staged git files before committing.
+This script was initially setup for installing the [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/lint-staged/lint-staged). It sets up the `.husky` directory, which you can ignore. When you run `git commit -m <message>`, Husky executes the `.husky/pre-commit` script through `lint-staged`. This ensures linting and other tasks are performed on staged git files before committing.
 
 ```bash
 npm run prepare
